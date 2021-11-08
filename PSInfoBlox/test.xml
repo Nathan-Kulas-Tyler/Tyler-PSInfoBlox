@@ -1,0 +1,16 @@
+<execution-context xmlns="http://www.vmware.com/vco">
+  <parameters>
+    <parameter name="VMName" type="string">
+      <string>MUN-DEVTEST-01</string>
+    </parameter>
+    <parameter name="MemoryInMB" type="number">
+      <number>4096</number>
+    </parameter>
+    <parameter name="CPUCount" type="number">
+      <number>8</number>
+    </parameter>
+    <parameter name="ActionDate" type="Date">
+      <date>2017-05-19T22:30:00.0000000-04:00</date>
+    </parameter>
+  </parameters>
+</execution-context>
