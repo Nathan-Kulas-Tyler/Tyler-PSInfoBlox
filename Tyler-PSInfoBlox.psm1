@@ -4,7 +4,7 @@
     Commandlets for interfacing with the InfoBlox WAPI Release 2.3
     
     .NOTES
-    Author: omrsafetyo
+    Author: Nathan Kulas
     Email:    omrsafetyo@gmail.com
     Date:    4/7/2017
     PSVer:    3.0
