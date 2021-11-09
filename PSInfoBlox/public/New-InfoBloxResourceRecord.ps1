@@ -175,7 +175,7 @@ Function New-InfoBloxResourceRecord {
                 $attributeCollection.Add($pipv4Address)
                 $attributeCollection.Add($ipv4ValidatePatternAttribute)
                 $pipv4Param = New-Object System.Management.Automation.RuntimeDefinedParameter('IPv4Addr', [string], $attributeCollection)
-                $paramDictionary.Add('IPv4Addr', $ipv4Param)
+                $paramDictionary.Add('IPv4Addr', $pipv4Param)
                 [void]$DynamicParamList.Add("IPv4Addr")
                 
                 $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
@@ -192,7 +192,7 @@ Function New-InfoBloxResourceRecord {
 				$pNextAvailableIpAliases = New-Object System.Management.Automation.AliasAttribute -ArgumentList @("NextAvailable", "UseNextAvailable", "NextIP", "NextIPAddress")
                 $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
                 $attributeCollection.Add($pNextAvailableIp)
-				$attributeCollection.Add($NextAvailableIpAliases)
+				$attributeCollection.Add($pNextAvailableIpAliases)
                 $NextAvailableIpParam = New-Object System.Management.Automation.RuntimeDefinedParameter('UseNextAvailableIp', [switch], $attributeCollection)
                 $paramDictionary.Add('UseNextAvailableIp', $NextAvailableIpParam)
 				[void]$DynamicParamList.Add("UseNextAvailableIp")
@@ -413,7 +413,7 @@ Function New-InfoBloxResourceRecord {
                 $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
                 $attributeCollection.Add($pMailExchanger)
                 $MailExchangerParam = New-Object System.Management.Automation.RuntimeDefinedParameter('mail_exchanger', [string], $attributeCollection)
-                $paramDictionary.Add('mail_exchanger', $ipv6Param)
+                $paramDictionary.Add('mail_exchanger', $MailExchangerParam)
                 [void]$DynamicParamList.Add("mail_exchanger")
                 
                 $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
