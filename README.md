@@ -2,7 +2,7 @@
 
 
 ## Installation: 
-
+```PowerShell
     $ProgressPreference = 'SilentlyContinue'
     Add-Type -AssemblyName System.IO.Compression.FileSystem;
 
@@ -27,7 +27,7 @@
     $pathToInstall = Join-Path $ProfileModulePath $ModuleName
     $path = (Resolve-Path -Path "$ExtractFolder\*").Path
     Move-Item -Path $path -Destination $pathToInstall
-
+```
 
 ## Sample usage
 
