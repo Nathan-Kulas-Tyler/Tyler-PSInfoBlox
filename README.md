@@ -63,4 +63,4 @@
     $Object
 
 ## EXAMPLE 3:  If IP Address is already known
-    New-InfoBloxResourceRecord -RecordType Host -Network $SubnetDefinition -IPv4Addr $MyIPAddress -Name $Hostrecord -Credential $InfoBloxCredential -IBServer $IBServer
+    New-InfoBloxResourceRecord -RecordType Host -IPv4Addr $MyIPAddress -Name $Hostrecord -Credential $InfoBloxCredential -IBServer $IBServer
